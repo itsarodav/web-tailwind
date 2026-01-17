@@ -1,26 +1,93 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/sabores-de-siempre-iso.svg" type="image/svg+xml">
+    <title>Sabores de siempre</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <include src="./views/header.html"></include>
+
+    <section class="hero">
+      <div class="grid min-h-[480px] lg:h-[93vh] lg:grid-cols-2">
+        <!-- Imagen -->
+        <div class="h-full overflow-hidden">
+          <img
+            src="./assets/images/hero-section.webp"
+            alt="Cocinero preparando platos"
+            class="h-full w-full object-cover"
+          >
+        </div>
+
+        <!-- Texto -->
+        <div class="flex h-full items-center bg-brand-primary text-light">
+          <div class="w-full px-md py-lg lg:px-lg lg:py-xl">
+            <div class="max-w-[42rem]">
+              <h1 class="font-serif text-hero font-semibold leading-hero tracking-hero text-balance">
+                Sabores clásicos, experiencias nuevas: apúntate a las jornadas gastronómicas del año
+              </h1>
+
+              <p class="mt-sm font-sans text-subtitle leading-title opacity-90">
+                3ra Edición de Jornadas de comida tradicional | Valencia 2025
+              </p>
+
+              <div class="mt-md flex flex-col gap-2 sm:flex-row">
+                <a
+                  href="./acerca-de.html"
+                  class="inline-flex items-center justify-center gap-2 rounded-md border-2 border-light px-md py-2 text-button font-medium text-light hover:bg-white/20 hover:font-semibold"
+                >
+                  Más de las jornadas <i class="fa-solid fa-heart"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-intro text-dark py-xl ">
+      <div class="sds-container mx-auto">
+        <div class="mx-auto grid max-w-7xl items-center gap-y-lg lg:grid-cols-[1fr_auto_1fr] lg:gap-x-10">
+
+          <!-- Left -->
+          <div class="text-center lg:text-right w-full">
+            <h2 class="mb-sm font-serif text-title font-semibold leading-title tracking-title text-brand-primary">
+              Redescubrimos la cocina casera en comunidad
+            </h2>
+            <p class="font-sans text-body leading-body tracking-body opacity-80">
+              Sabores de Siempre es un evento gastronómico que reúne a cocineros, casas de comida y público en general para redescubrir la cocina casera. Durante varios días, podrás aprender recetas, probar platos emblemáticos y conocer las historias que hay detrás de ellos. 
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="mx-auto w-full max-w-[24rem] lg:max-w-[28rem]">
+            <img
+              src="./assets/images/seccion-dos-paella.webp"
+              alt="Plato con comida tradicional"
+              class="block w-full rounded-md object-cover"
+            >
+          </div>
+
+          <!-- Right -->
+          <div class="text-center lg:text-left w-full">
+            <h2 class="mb-sm font-serif text-title font-semibold leading-title tracking-title text-brand-primary">
+              Tradición que sigue viva
+            </h2>
+            <p class="font-sans text-body leading-body tracking-body opacity-80">
+              La cocina tradicional española es el hilo conductor porque une generaciones y regiones muy diferentes. Desde los pucheros del norte hasta los arroces del levante, buscamos poner en valor esa diversidad que hace que nuestra mesa sea tan rica y reconocible. 
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <include src="./views/contact.html"></include>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>

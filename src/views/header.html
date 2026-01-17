@@ -1,0 +1,51 @@
+<header class="sticky top-0 !px-6 !pt-6 !pb-6 z-10 border-b border-black/15 bg-light">
+    <nav class=" flex items-center justify-between" >
+
+        <!-- Brand -->
+        <a href="./index.html"
+        class="inline-flex items-center gap-xs font-serif text-logo font-semibold tracking-title text-dark no-underline">
+        <img src="./assets/images/sabores-de-siempre-iso.svg"
+            alt="Logo Sabores de siempre"
+            class="h-6 w-6"
+            width="24" height="24">
+        <span>Sabores de siempre</span>
+        </a>
+
+        <!-- Toggle -->
+        <button
+        type="button"
+        class="inline-flex items-center justify-center rounded-md border border-black/15 bg-white px-sm py-2 text-body font-medium text-dark hover:bg-black/5 lg:hidden"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+        data-menu-toggle
+        >
+        <span class="sr-only">Abrir menú</span>
+        <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Desktop menu -->
+        <div class="hidden items-center gap-md lg:flex">
+        <a href="./acerca-de.html" class="text-body font-medium text-dark/80 hover:text-dark">
+            Acerca de
+        </a>
+
+        <a href="./registro.html"
+            class="inline-flex items-center justify-center rounded-md bg-brand-primary px-md py-2 text-button font-semibold text-light hover:bg-brand-secondary focus:outline-none focus:ring-2 focus:ring-brand-secondary">
+            Regístrate
+        </a>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden border-t border-black/10 bg-light lg:hidden" data-menu>
+        <div class="sds-container flex flex-col gap-2 py-sm">
+        <a href="./acerca-de.html" class="rounded-md px-sm py-2 text-body font-medium text-dark/80 hover:bg-black/5 hover:text-dark">
+            Acerca de
+        </a>
+        <a href="./registro.html"
+            class="inline-flex items-center justify-center rounded-md bg-brand-primary px-md py-2 text-button font-semibold text-light hover:bg-brand-secondary focus:outline-none focus:ring-2 focus:ring-brand-secondary">
+            Regístrate
+        </a>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,58 @@
+<section class="bg-[#f1e5ca] py-2xl">
+    <div class="sds-container">
+        <div class="mx-auto w-full px-8 lg:max-w-3xl px-20">
+        <h2 class="mb-md flex items-center justify-center gap-xs text-center font-serif text-title font-semibold leading-title tracking-title text-brand-primary">
+            <i class="fa-solid fa-fire" aria-hidden="true"></i>
+            <span>Suscríbete a nuestro newsletter</span>
+            <i class="fa-solid fa-fire" aria-hidden="true"></i>
+        </h2>
+
+        <form class="space-y-md">
+            <div class="space-y-2">
+            <label for="fullName" class="text-small font-medium text-dark">
+                Nombre y apellidos
+            </label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Tu nombre completo"
+                class="w-full rounded-md border border-black/15 bg-white px-sm py-2 text-body placeholder:text-dark/40 focus:outline-none focus:ring-2 focus:ring-brand-secondary"
+            />
+            </div>
+
+            <div class="space-y-2">
+            <label for="email" class="text-small font-medium text-dark">
+                Correo electrónico
+            </label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nombre@ejemplo.com"
+                class="w-full rounded-md border border-black/15 bg-white px-sm py-2 text-body placeholder:text-dark/40 focus:outline-none focus:ring-2 focus:ring-brand-secondary"
+            />
+            </div>
+
+            <div class="flex items-start gap-2">
+            <input
+                type="checkbox"
+                id="termsCheck"
+                name="termsCheck"
+                class="mt-1 h-4 w-4 rounded border border-black/20 accent-brand-primary"
+            />
+            <label for="termsCheck" class="text-small text-dark/80">
+                Acepto los términos y condiciones
+            </label>
+            </div>
+
+            <button
+            type="submit"
+            class="w-full rounded-md bg-brand-primary px-md py-2 text-button font-semibold text-light hover:bg-brand-secondary focus:outline-none focus:ring-2 focus:ring-brand-secondary"
+            >
+            Enviar
+            </button>
+        </form>
+        </div>
+    </div>
+</section>

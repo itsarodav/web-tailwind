@@ -1,0 +1,98 @@
+<fieldset class="sds-fieldset">
+    <legend class="sds-legend">Datos de registro</legend>
+
+    <!-- Nombres -->
+    <div class="grid gap-sm tablet:grid-cols-3">
+        <div>
+        <label class="sds-label" for="nombre">Nombre *</label>
+        <input type="text" class="sds-control" id="nombre" name="nombre" autocomplete="given-name" required />
+        </div>
+
+        <div>
+        <label class="sds-label" for="apellido1">Primer apellido *</label>
+        <input type="text" class="sds-control" id="apellido1" name="apellido1" autocomplete="family-name" required />
+        </div>
+
+        <div>
+        <label class="sds-label" for="apellido2">Segundo apellido</label>
+        <input type="text" class="sds-control" id="apellido2" name="apellido2" autocomplete="additional-name" />
+        </div>
+    </div>
+
+    <!-- Email y Telf -->
+    <div class="mt-md grid gap-sm tablet:grid-cols-2">
+        <div>
+        <label class="sds-label" for="email">Correo electrónico *</label>
+        <input type="email" class="sds-control" id="email" name="email" autocomplete="email" aria-describedby="emailHelp" required/>
+        <p id="emailHelp" class="sds-help">
+            Usaremos tu correo para confirmarte la inscripción y enviarte la información de las jornadas.
+        </p>
+        </div>
+
+        <div>
+        <label class="sds-label" for="telefono">Número de teléfono *</label>
+        <input type="tel" class="sds-control" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9+\s]{6,}" aria-describedby="phoneHelp" required/>
+        <p id="phoneHelp" class="sds-help">
+            Solo te contactaremos por temas relacionados con las jornadas.
+        </p>
+        </div>
+    </div>
+
+    <!-- Ciudad / Comunidad / Edad -->
+    <div class="mt-md grid gap-sm tablet:grid-cols-3">
+        <div>
+        <label class="sds-label" for="ciudad">Ciudad *</label>
+        <input type="text" class="sds-control" id="ciudad" name="ciudad" autocomplete="address-level2" required />
+        </div>
+
+        <div>
+        <label class="sds-label" for="comunidad">Comunidad autónoma *</label>
+        <select class="sds-control" id="comunidad" name="comunidad" required>
+            <option value="" selected disabled>Selecciona tu comunidad</option>
+            <option value="Andalucía">Andalucía</option>
+            <option value="Aragón">Aragón</option>
+            <option value="Asturias">Asturias</option>
+            <option value="Illes Balears">Illes Balears</option>
+            <option value="Canarias">Canarias</option>
+            <option value="Cantabria">Cantabria</option>
+            <option value="Castilla-La Mancha">Castilla-La Mancha</option>
+            <option value="Castilla y León">Castilla y León</option>
+            <option value="Cataluña">Cataluña</option>
+            <option value="Comunidad Valenciana">Comunidad Valenciana</option>
+            <option value="Extremadura">Extremadura</option>
+            <option value="Galicia">Galicia</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Comunidad de Madrid">Comunidad de Madrid</option>
+            <option value="Región de Murcia">Región de Murcia</option>
+            <option value="Navarra">Navarra</option>
+            <option value="País Vasco">País Vasco</option>
+            <option value="Ceuta">Ceuta</option>
+            <option value="Melilla">Melilla</option>
+        </select>
+        </div>
+
+        <div>
+        <label class="sds-label" for="edad">Edad *</label>
+        <input type="number" class="sds-control" id="edad" name="edad" min="16" max="120" required />
+        </div>
+    </div>
+
+    <!-- Profesión / acompañantes -->
+    <div class="mt-md grid gap-sm tablet:grid-cols-2">
+        <div>
+        <label class="sds-label" for="profesion">Profesión / sector</label>
+        <input type="text" class="sds-control" id="profesion" name="profesion" placeholder="Ej. Estudiante, cocinero/a, marketing..."/>
+        </div>
+
+        <div>
+        <label class="sds-label" for="acompanantes">¿Vendrás solo/a o acompañado/a?</label>
+        <select class="sds-control" id="acompanantes" name="acompanantes">
+            <option value="" selected disabled>Selecciona una opción</option>
+            <option value="solo">Iré solo/a</option>
+            <option value="1-persona">Con 1 acompañante</option>
+            <option value="2-personas">Con 2 acompañantes</option>
+            <option value="3-o-mas">Con 3 o más acompañantes</option>
+        </select>
+        </div>
+    </div>
+</fieldset>

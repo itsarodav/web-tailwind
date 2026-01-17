@@ -1,0 +1,53 @@
+<fieldset class="sds-fieldset">
+    <legend class="sds-legend">Sobre tu interés en las jornadas</legend>
+
+    <div class=" tablet:flex lg:flex flex-col">
+        <div class="tablet:col-span-1 flex flex-col-reverse gap-2">
+        <select class="sds-control" id="nivelCocina" name="nivelCocina" required>
+            <option value="" selected disabled>Selecciona tu nivel</option>
+            <option value="sin-experiencia">Sin experiencia</option>
+            <option value="experiencia-casa">Experiencia en casa</option>
+            <option value="experiencia-prof-ocasional">Experiencia profesional ocasional</option>
+            <option value="profesional">Me dedico a la cocina profesional</option>
+        </select>
+
+        <label class="sds-label" for="nivelCocina">¿En qué nivel de cocina te encuentras? *</label>
+        </div>
+
+        <div class="tablet:col-span-1 flex flex-col-reverse gap-2">
+        <textarea class="sds-control min-h-[96px] resize-y" id="experienciaCursos" name="experienciaCursos"></textarea>
+
+        <label class="sds-label" for="experienciaCursos">¿Has participado antes en cursos o jornadas de cocina? ¿Cuáles?</label>
+        </div>
+
+        <div class="tablet:col-span-2">
+        <label class="sds-label" for="platosInteres">¿Qué platillos te gustaría preparar durante las jornadas? *</label>
+        <textarea class="sds-control min-h-[120px] resize-y" id="platosInteres" name="platosInteres" required></textarea>
+        </div>
+
+        <div class="tablet:col-span-2">
+        <label class="sds-label" for="tiposCocina">¿Qué tipo de cocina tradicional te interesa más?</label>
+        <textarea class="sds-control min-h-[96px] resize-y" id="tiposCocina" name="tiposCocina" placeholder="Ej. Cocina tradicional española, mediterránea, latinoamericana, repostería, etc."></textarea>
+        </div>
+
+        <div class="tablet:col-span-2">
+        <label class="sds-label" for="comoEnterado">¿Cómo te has enterado de las jornadas de cocina tradicional? *</label>
+        <textarea class="sds-control min-h-[96px] resize-y" id="comoEnterado" name="comoEnterado" required></textarea>
+        </div>
+
+        <div class="tablet:col-span-2">
+        <label class="sds-label" for="restriccionesAlimentarias">¿Tienes alguna restricción o preferencia alimentaria?</label>
+        <textarea class="sds-control min-h-[96px] resize-y" id="restriccionesAlimentarias" name="restriccionesAlimentarias" placeholder="Ej. Vegetarianismo, alergias, intolerancias, preferencias..."></textarea>
+        </div>
+
+        <div class="tablet:col-span-2">
+        <label class="sds-label" for="expectativas">¿Qué te gustaría conseguir con estas jornadas? *</label>
+        <textarea class="sds-control min-h-[120px] resize-y" id="expectativas" name="expectativas" required></textarea>
+        </div>
+
+        <div class="tablet:col-span-2">
+        <label class="sds-label" for="comentariosAdicionales">Comentarios adicionales o necesidades especiales</label>
+        <textarea class="sds-control min-h-[120px] resize-y" id="comentariosAdicionales" name="comentariosAdicionales" placeholder="Cuéntanos si necesitas algo específico de organización, accesibilidad, horarios, etc."></textarea>
+        </div>
+    </div>
+</fieldset>
